@@ -1,0 +1,1 @@
+<root BTCPP_format="4"><BehaviorTree ID="MainTree"><Sequence name="root_sequence">   <Sequence><checkIfFinishedBlue/><findBox/><checkIfFinished/><grabBox/><checkIfFinishedBlue/><findBox/><findBoxBlue/><findBox/></Sequence>   </Sequence></BehaviorTree></root>

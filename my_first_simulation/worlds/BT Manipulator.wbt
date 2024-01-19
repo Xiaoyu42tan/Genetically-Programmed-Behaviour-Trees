@@ -1,0 +1,151 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/MyIPR180.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+  contactProperties [
+    ContactProperties {
+      material2 "gripper"
+      coulombFriction [
+        -1
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.3763927342299405 0.37333904890884045 0.8479071082251591 1.6822758043724502
+  position -0.1675245847328071 -2.132424799877623 2.131247681570356
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF IPR_robot MyIPR180 {
+  rotation 0 0 1 4.6928012867022945e-06
+  controller "IPR_controller"
+  supervisor TRUE
+  wristSlot [
+    DEF CAMERA_NODE Camera {
+      translation 1.12158e-07 0.04 0.11
+      rotation 0.5773529358529169 0.5773489358533613 0.5773489358533613 -2.094395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.05 0.05 0.05
+          }
+        }
+      ]
+      recognition Recognition {
+      }
+    }
+  ]
+}
+Robot {
+  name "supervisor"
+  controller "supervisor"
+  supervisor TRUE
+}
+DEF OBJECTIVE_1 Solid {
+  translation 0.03 -0.29 0.0349498
+  children [
+    DEF TARGET_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+      castShadows FALSE
+    }
+  ]
+  name "target_1"
+  boundingObject USE TARGET_SHAPE
+  physics Physics {
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
+DEF OBJECTIVE_2 Solid {
+  translation 0.191447 -0.219493 0.0349498
+  rotation 0 0 1 0.785398
+  children [
+    DEF TARGET2_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+      castShadows FALSE
+    }
+  ]
+  name "target_1(1)"
+  boundingObject USE TARGET2_SHAPE
+  physics Physics {
+  }
+  recognitionColors [
+    0 0 1
+  ]
+}
+Solid {
+  translation 0.03 -0.29 0
+  children [
+    DEF OBJ_SHAPE Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.0001
+      }
+    }
+  ]
+  name "red plate"
+}
+Solid {
+  translation 0.195366 -0.226177 0
+  rotation 0 0 1 0.785397
+  children [
+    USE OBJ_SHAPE
+  ]
+  name "blue plate"
+}
+Solid {
+  translation 0.03 0.33 0
+  children [
+    DEF FINISH_POSITION Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.0001
+      }
+    }
+  ]
+  name "objective plate"
+}
+Floor {
+  name "default"
+  size 2 2
+}
+Solid {
+  translation -1.01 0 0.49
+  children [
+    Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Box {
+        size 0.01 2 1
+      }
+    }
+  ]
+}

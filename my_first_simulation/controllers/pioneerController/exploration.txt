@@ -1,0 +1,280 @@
+71
+4
+75
+25
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+28
+19
+Iteration: 1 Generation: 1 Walls Explored: 28
+Iteration: 2 Generation: 1 Walls Explored: 28
+Iteration: 3 Generation: 1 Walls Explored: 28
+Iteration: 4 Generation: 1 Walls Explored: 28
+Iteration: 5 Generation: 1 Walls Explored: 28
+Iteration: 6 Generation: 1 Walls Explored: 28
+Iteration: 7 Generation: 1 Walls Explored: 28
+Iteration: 8 Generation: 1 Walls Explored: 28
+Iteration: 9 Generation: 1 Walls Explored: 28
+Iteration: 1 Generation: 1 Walls Explored: 18
+Iteration: 1 Generation: 1 Walls Explored: 16
+Iteration: 1 Generation: 1 Walls Explored: 11
+Iteration: 1 Generation: 1 Walls Explored: 8
+Iteration: 1 Generation: 1 Walls Explored: 4
+Iteration: 2 Generation: 1 Walls Explored: 4
+Iteration: 3 Generation: 1 Walls Explored: 4
+Iteration: 4 Generation: 1 Walls Explored: 6
+Iteration: 5 Generation: 1 Walls Explored: 28
+Iteration: 6 Generation: 1 Walls Explored: 28
+Iteration: 1 Generation: 1 Walls Explored: 28
+Iteration: 2 Generation: 1 Walls Explored: 6
+Iteration: 3 Generation: 1 Walls Explored: 28
+Iteration: 4 Generation: 1 Walls Explored: 4
+Iteration: 5 Generation: 1 Walls Explored: 28
+Iteration: 6 Generation: 1 Walls Explored: 4
+Iteration: 7 Generation: 1 Walls Explored: 4
+Iteration: 8 Generation: 1 Walls Explored: 4
+Iteration: 9 Generation: 1 Walls Explored: 28
+Iteration: 10 Generation: 1 Walls Explored: 4
+Iteration: 1 Generation: 2 Walls Explored: 28
+Iteration: 2 Generation: 2 Walls Explored: 6
+Iteration: 3 Generation: 2 Walls Explored: 28
+Iteration: 4 Generation: 2 Walls Explored: 4
+Iteration: 5 Generation: 2 Walls Explored: 28
+Iteration: 6 Generation: 2 Walls Explored: 4
+Iteration: 7 Generation: 2 Walls Explored: 4
+Iteration: 1 Generation: 1 Walls Explored: 6
+Iteration: 2 Generation: 1 Walls Explored: 28
+Iteration: 3 Generation: 1 Walls Explored: 4
+Iteration: 4 Generation: 1 Walls Explored: 4
+Iteration: 5 Generation: 1 Walls Explored: 4
+Iteration: 6 Generation: 1 Walls Explored: 4
+Iteration: 7 Generation: 1 Walls Explored: 28
+Iteration: 8 Generation: 1 Walls Explored: 28
+Iteration: 9 Generation: 1 Walls Explored: 4
+Iteration: 10 Generation: 1 Walls Explored: 4
+Iteration: 1 Generation: 2 Walls Explored: 5

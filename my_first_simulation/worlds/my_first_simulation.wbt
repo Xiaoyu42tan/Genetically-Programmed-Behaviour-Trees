@@ -1,0 +1,1728 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/samples/tutorials/protos/FourWheelsRobot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/adept/pioneer2/protos/Pioneer2.proto"
+IMPORTABLE EXTERNPROTO "../protos/MyPioneer2.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.29801936779267174 -0.3015630786985973 -0.9056733218916632 4.625234127475993
+  position -3.804556290718497 -5.114945645406853 4.098941609088064
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  translation 2.68 0 0.27
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+    TouchSensor {
+      boundingObject Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "theSupervisor"
+  recognitionColors [
+    0 1 0
+  ]
+  controller "supervisor"
+  supervisor TRUE
+}
+Floor {
+}
+Pose {
+  translation -1.75 1.13 0.3
+  children [
+    DEF WALLPARTRIGHT Solid {
+      translation 0 0.06 0
+      children [
+        DEF testshape Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry DEF test1 Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      boundingObject USE testshape
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    DEF WALLPARTLEFT Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject DEF test Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -1.25 1.13 0.3
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.75 1.13 0.3
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(4)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(5)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.62 0.75 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(6)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(7)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.62 0.25 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(8)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(14)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -1 0.13 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -1 -0.62 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.25 1.13 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.62 -1.75 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(10)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.62 -1.25 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(12)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation -0.62 -0.75 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 0.63 -1.25 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(9)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 0.63 -0.75 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 1 -0.87 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 0.75 0.13 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 1.25 0.13 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 0.63 0.5 0.3
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+Pose {
+  translation 0.75 0.88 0.3
+  rotation 0 0 1 1.01503e-06
+  children [
+    Solid {
+      translation 0 0.06 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 0 -0.07 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.13 0.6
+          }
+        }
+      ]
+      name "solid(11)"
+      boundingObject Box {
+        size 0.5 0.13 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+DEF OuterWall Pose {
+  children [
+    Solid {
+      translation 2.06 0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(8)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(7)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(6)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -6.74634e-14 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(1)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(5)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(4)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+DEF OuterWall Pose {
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Solid {
+      translation 2.06 0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -6.74634e-14 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+DEF OuterWall Pose {
+  rotation 0 0 1 1.5708
+  children [
+    Solid {
+      translation 2.06 0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -6.74634e-14 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+DEF OuterWall Pose {
+  rotation 0 0 1 3.14159
+  children [
+    Solid {
+      translation 2.06 0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -0.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(2)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 -6.74634e-14 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 2 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1.5 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+    Solid {
+      translation 2.06 1 0.3
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.5 0.125 0.6
+          }
+        }
+      ]
+      name "outerwall(3)"
+      boundingObject Box {
+        size 0.5 0.125 0.6
+      }
+      recognitionColors [
+        1 0 0
+      ]
+    }
+  ]
+}
+DEF PIONEERSEEKER MyPioneer2 {
+  translation -4.53 0 0
+  controller "pioneerController"
+  extensionSlot [
+    DEF SEEKER_CAMERA Camera {
+      translation 0 0 0.29
+      children [
+        Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+          castShadows FALSE
+        }
+      ]
+      name "pioneer_camera"
+      boundingObject Box {
+        size 0.1 0.1 0.1
+      }
+      recognition Recognition {
+      }
+    }
+  ]
+}
