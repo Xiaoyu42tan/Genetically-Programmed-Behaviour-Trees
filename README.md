@@ -1,4 +1,4 @@
-![image](https://github.com/Xiaoyu42tan/Genetically-Programmed-Behaviour-Trees/assets/114973467/029d12b5-d1c1-44e3-a205-541c62c5a13d)# Genetically programmed Behaviour Trees
+# Genetically programmed Behaviour Trees
 
 This is a Webots Simulator project aimed to explore self-learning AI for robotics. 
 
