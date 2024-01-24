@@ -2,10 +2,12 @@
 
 This is a Webots Simulator project aimed to explore self-learning AI for robotics. 
 
-What is a behaviour tree?
+**What is a behaviour tree?**
+
 Behaviour trees are popular controllers for autonomous agents such as video game NPCs. They are well known in the game development industry for their reactivity (easily allowing autonomous agents to react appropriately to environmental changes) and modularity (complex trees can be abstracted to modules, allowing for code scalability and readability).  
 
-What does this project do?
+**What does this project do?**
+
 The growing complexity of robot behaviour has required a more robust means of controlling them autonomously. This project uses Webots simulator to simulate using behaviour trees to control a robot. Specifically, it implements genetic programming to automatically generate behaviour trees for a manipulator robot to perform a certain task.
 
 There are 3 tasks of increasing difficulty that the robot must learn to do: 
@@ -14,7 +16,7 @@ There are 3 tasks of increasing difficulty that the robot must learn to do:
 3. Same as task 2, but now with two boxes. The robot must put them both in the specified area and make sure they stay there
 These tasks were designed such that it tests the inherent reactivity of behaviour trees, as the robot must react to unpredictable environmental changes.
 
-3 handcrafted behaviour trees were also made to complete these tasks. The genetically programmed behaviour trees performed on par with the handcrafted trees for the first two tasks, and SURPASSED the handcrafted tree on the third and most complex task. 
+3 handcrafted behaviour trees were also made to complete these tasks. The genetically programmed behaviour trees performed on par with the handcrafted trees for the first two tasks, and **SURPASSED** the handcrafted tree on the third and most complex task. 
 I measured performance based on:
 1. What percentage of the task the robot completed (all genetically programmed trees finished in the end)
 2. How fast the robot completed the task, and whether or not it KNOWS it completed the task
@@ -30,7 +32,7 @@ On the third task the genetic algorithm outperformed my handcrafted tree by usin
 
 
 
-BUILDING:
+**BUILDING:**
 
 Nothing will work until you build the BT.CPP library from https://www.behaviortree.dev/
 
@@ -45,7 +47,7 @@ The existing makefile was the setup for my computer with my personal directories
 
         LIBRARIES = -L"C:\Users\tanyo\Documents\ExternalLibs\BTLIB\build" -l libbehaviortree_cpp
 
-FUN STUFF:
+**FUN STUFF:**
 
 Once it works you can tweak GP parameters in the supervisor.cpp script.
 
